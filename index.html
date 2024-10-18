@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIVO Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>NIVO-The innovative</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="products">
+            <h1>Products</h1>
+            <h2>Jackets</h2>
+
+            <div class="product-container">
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$15.00</p>
+                    <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$20.00</p>
+                    <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+                </div>
+            </div>
+            <h2>Shirts</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$15.00</p>
+                    <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$20.00</p>
+                    <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h1>Products</h1>
+            <h2>Hoodies</h2>
+
+            <div class="product-container">
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$15.00</p>
+                    <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$20.00</p>
+                    <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+                </div>
+            </div>
+
+            
+        </section>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+
+              
+                
+                Welcome to Nivo - The Innovative,This store is made by "Mr. Hassan Shaheen" your go-to destination for stylish and modern clothing! We believe that fashion is a powerful form of self-expression, and our mission is to help you find pieces that reflect your unique style.
+                
+                Founded with a passion for creativity and quality, Nivo curates a diverse collection of apparel that combines the latest trends with timeless elegance. Whether you’re looking for casual wear, chic outfits for special occasions, or standout accessories, we’ve got you covered.
+                
+                At Nivo, we prioritize comfort, sustainability, and craftsmanship in every piece we offer. Our team is dedicated to sourcing high-quality materials and working with talented designers to ensure that you not only look good but feel good in what you wear.
+                
+                We value our community and strive to create an inclusive environment where everyone can express themselves through fashion. Your satisfaction is our top priority, and our customer service team is always here to assist you with any questions or concerns.
+                
+                Join us on this exciting fashion journey and discover how Nivo - The Innovative can elevate your wardrobe. Thank you for  being a part of our story!
+                
+        .</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Contact:03018008401</p>
+            <p>Email:xphassanali6@gmail.com </p>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: $0.00</p>
+        </div>
+    </div>
+
+    <footer>
+        <p><h4>&copy; 2024 NIVO the innovative Online Store</h4></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
